@@ -1,6 +1,7 @@
 services:
   backend:
     build: ./backend
+    image: netbackend
     environment:
       - ASPNETCORE_URLS=http://+:5001
     ports:
@@ -8,6 +9,7 @@ services:
   
   frontend:
     build: ./frontend
+    image: reactbackend
     ports:
       - 5000:80
     depends_on:

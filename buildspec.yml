@@ -30,6 +30,7 @@ phases:
 
 artifacts:
   files:
+    - 'Dockerrun.aws.json'
     - 'docker-compose.yml'
     - 'backend/**/*'
     - 'frontend/**/*'
