@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     //Change api fetching to the right location
-    fetch("http://localhost:5001/WeatherForecast")
+    fetch("http://pokemonapireston-env.eba-3kaqziuz.us-east-1.elasticbeanstalk.com:5001/WeatherForecast")
       .then(response => response.json())
       .then(weathers => {
         // console.log(weathers);
