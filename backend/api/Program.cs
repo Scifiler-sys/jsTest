@@ -7,7 +7,7 @@ builder.Services.AddCors(
                     builder.AddDefaultPolicy((policy) => {
                         //Make sure the origin is exact
                         //http://localhost:3000 != http://localhost:3000/ they are NOT the same!
-                        policy.WithOrigins("http://localhost:3000", "https://localhost:3000","http://localhost:5000","http://pokemonapireston-env.eba-3kaqziuz.us-east-1.elasticbeanstalk.com:5000")
+                        policy.WithOrigins("http://localhost:3000", "https://localhost:3000","http://localhost:5000","http://pokemonapireston-env.eba-3kaqziuz.us-east-1.elasticbeanstalk.com")
                             .AllowAnyHeader() //Allows any header we provide in the http header request
                             .AllowAnyMethod(); //Allows any method we provide in the http request
                     });
